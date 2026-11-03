@@ -1,0 +1,19 @@
+{
+  "name": "Fold Ruler & Grid Templates",
+  "id": "fold-ruler-grid-templates",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html",
+  "editorType": ["figma"],
+  "documentAccess": "dynamic-page",
+  "networkAccess": {
+    "allowedDomains": ["none"]
+  },
+  "menu": [
+    { "name": "Open Fold Ruler & Grids", "command": "open" },
+    { "separator": true },
+    { "name": "Add fold ruler to selection", "command": "add-ruler" },
+    { "name": "Apply default template to selection", "command": "apply-default" },
+    { "name": "Remove plugin rulers from selection", "command": "remove-rulers" }
+  ]
+}
