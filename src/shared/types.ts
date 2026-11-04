@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Lucas. See LICENSE.
 /** Hex color without "#", e.g. "FF0000". */
 export type Hex = string;
 

@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Lucas. See LICENSE.
 import { CATEGORIES, PRESETS } from "../../shared/presets";
 
 /** Picker for a preset id or a whole category (used for "suggested for" and default templates). */

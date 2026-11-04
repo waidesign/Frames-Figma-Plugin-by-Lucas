@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Lucas. See LICENSE.
 import { useEffect, useMemo, useRef, useState } from "preact/hooks";
 import type { ApplyMode } from "../../shared/messages";
 import { isCategory, previewSize, targetLabel } from "../../shared/presets";

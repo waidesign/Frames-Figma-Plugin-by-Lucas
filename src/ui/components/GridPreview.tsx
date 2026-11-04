@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Lucas. See LICENSE.
 import { computeSections } from "../../shared/gridMapping";
 import type { GridLayerDef } from "../../shared/types";
 

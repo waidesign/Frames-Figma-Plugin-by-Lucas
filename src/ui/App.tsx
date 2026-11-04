@@ -1,8 +1,10 @@
+// Copyright (c) 2026 Lucas. See LICENSE.
 import type { JSX } from "preact";
 import { useCallback, useEffect, useRef, useState } from "preact/hooks";
 import type { LayoutTemplate, PluginSettings, SelectionInfo } from "../shared/types";
 import { listen, send } from "./bridge";
 import { CreateTab } from "./components/CreateTab";
+import { CreditFooter } from "./components/CreditFooter";
 import { SettingsTab } from "./components/SettingsTab";
 import { TemplatesTab } from "./components/TemplatesTab";
 import type { ImportResult } from "./components/TransferDialog";
@@ -125,6 +127,8 @@ export function App() {
           </span>
         </div>
       )}
+
+      <CreditFooter />
     </>
   );
 }

@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Lucas. See LICENSE.
 import type { LayoutTemplate, PluginSettings, SelectionInfo } from "./types";
 
 /** "auto" = each preset's default template, "none" = no grids, otherwise a template id. */

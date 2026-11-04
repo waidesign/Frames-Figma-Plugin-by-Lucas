@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Lucas. See LICENSE.
 import type { JSX } from "preact";
 import { DEFAULT_GUTTER } from "../../shared/gridMapping";
 import {

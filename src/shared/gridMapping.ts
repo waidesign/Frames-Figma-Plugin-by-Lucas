@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Lucas. See LICENSE.
 import type { GridAlignment, GridLayerDef, Hex } from "./types";
 
 export const DEFAULT_COLOR: Hex = "FF0000";

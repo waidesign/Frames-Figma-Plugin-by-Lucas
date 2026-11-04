@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Lucas. See LICENSE.
 import { hexToRgb, layersToLayoutGrids, layoutGridsToLayers } from "./shared/gridMapping";
 import { computeRowPlacement, nextFrameIndex, type Box } from "./shared/layout";
 import type { ApplyMode, CreateItem, MainToUi, TemplateChoice, UiToMain } from "./shared/messages";

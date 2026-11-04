@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Lucas. See LICENSE.
 // Builds the plugin:
 //   src/code.ts      -> code.js  (Figma main thread, sandboxed JS)
 //   src/ui/main.tsx  -> ui.html  (single file, JS + CSS inlined)

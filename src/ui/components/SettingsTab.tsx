@@ -1,4 +1,16 @@
+// Copyright (c) 2026 Lucas. See LICENSE.
 import { useState } from "preact/hooks";
+import {
+  AUTHOR_NAME,
+  AUTHOR_URL,
+  COPYRIGHT_YEAR,
+  FACEBOOK_URL,
+  ISSUES_URL,
+  LICENSE_NAME,
+  LINKEDIN_URL,
+  PLUGIN_NAME,
+  PLUGIN_VERSION,
+} from "../../shared/credit";
 import { CATEGORIES, isCategory, targetLabel } from "../../shared/presets";
 import type { LayoutTemplate, PluginSettings, RulerMode } from "../../shared/types";
 import { send } from "../bridge";
@@ -156,6 +168,43 @@ export function SettingsTab({ settings, templates, updateSettings }: Props) {
           <button type="button" class="btn" onClick={() => send({ type: "restore-starters" })}>
             Restore starter templates
           </button>
+        </div>
+      </Section>
+
+      <Section title="About">
+        <div class="about-section stack">
+          <div class="row">
+            <span class="about-title">
+              <strong>{PLUGIN_NAME}</strong> <span class="muted">v{PLUGIN_VERSION}</span>
+            </span>
+          </div>
+          <p class="about-author">Created by {AUTHOR_NAME}</p>
+          <p class="about-copyright muted">
+            Copyright © {COPYRIGHT_YEAR} {AUTHOR_NAME} · {LICENSE_NAME}
+          </p>
+          <div class="row wrap about-links">
+            <a href={AUTHOR_URL} target="_blank" rel="noopener noreferrer">
+              Website
+            </a>
+            <span class="muted" aria-hidden="true">
+              ·
+            </span>
+            <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+            <span class="muted" aria-hidden="true">
+              ·
+            </span>
+            <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer">
+              Facebook
+            </a>
+            <span class="muted" aria-hidden="true">
+              ·
+            </span>
+            <a href={ISSUES_URL} target="_blank" rel="noopener noreferrer">
+              Report an issue
+            </a>
+          </div>
         </div>
       </Section>
     </div>

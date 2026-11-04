@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Lucas. See LICENSE.
 import type { Preset, PresetCategory } from "./types";
 
 /**

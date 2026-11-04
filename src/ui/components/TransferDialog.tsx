@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Lucas. See LICENSE.
 import { useEffect, useRef, useState } from "preact/hooks";
 import { exportTemplates } from "../../shared/templates";
 import type { LayoutTemplate } from "../../shared/types";

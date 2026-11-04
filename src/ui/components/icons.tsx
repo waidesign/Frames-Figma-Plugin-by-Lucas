@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Lucas. See LICENSE.
 import type { ComponentChildren } from "preact";
 
 // Stroke width/caps come from the `.icon` rule in styles.css.

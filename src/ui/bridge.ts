@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Lucas. See LICENSE.
 import type { MainToUi, UiToMain } from "../shared/messages";
 
 /** The UI never touches the figma API; everything goes through these typed messages. */

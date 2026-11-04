@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Lucas. See LICENSE.
 import { useMemo, useState } from "preact/hooks";
 import type { CreateItem, TemplateChoice } from "../../shared/messages";
 import { CATEGORIES, PRESETS } from "../../shared/presets";

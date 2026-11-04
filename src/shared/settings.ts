@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Lucas. See LICENSE.
 import { normalizeHex } from "./gridMapping";
 import type { PluginSettings } from "./types";
 import { isRecord } from "./util";

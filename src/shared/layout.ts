@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Lucas. See LICENSE.
 export interface Box {
   x: number;
   y: number;

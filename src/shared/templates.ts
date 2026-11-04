@@ -1,3 +1,5 @@
+// Copyright (c) 2026 Lucas. See LICENSE.
+import { AUTHOR_NAME, AUTHOR_URL, PLUGIN_NAME } from "./credit";
 import {
   DEFAULT_COLOR,
   DEFAULT_COUNT,
@@ -295,6 +297,8 @@ export function validateTemplate(t: LayoutTemplate): TemplateValidation {
 export interface TemplateFile {
   schema: typeof TEMPLATE_SCHEMA;
   exportedAt: string;
+  createdWith?: string;
+  website?: string;
   templates: LayoutTemplate[];
 }
 
@@ -302,6 +306,8 @@ export function exportTemplates(templates: readonly LayoutTemplate[]): string {
   const file: TemplateFile = {
     schema: TEMPLATE_SCHEMA,
     exportedAt: new Date().toISOString(),
+    createdWith: `${PLUGIN_NAME} by ${AUTHOR_NAME}`,
+    website: AUTHOR_URL,
     templates: templates.map(({ scope: _scope, ...t }) => t),
   };
   return JSON.stringify(file, null, 2);

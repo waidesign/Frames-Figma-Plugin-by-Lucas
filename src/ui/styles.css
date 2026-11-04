@@ -871,3 +871,77 @@ textarea {
   height: 100%;
   background: var(--figma-color-bg-brand, #0d99ff);
 }
+
+/* ---- Credits & About ------------------------------------------------ */
+
+.credit-footer {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 6px 8px;
+  font-size: 11px;
+  line-height: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-top: 1px solid var(--figma-color-border, #e6e6e6);
+  background: var(--figma-color-bg, #fff);
+  color: var(--figma-color-text-secondary, #757575);
+}
+
+.credit-footer a {
+  color: var(--figma-color-text-secondary, #757575);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.credit-footer a:hover {
+  color: var(--figma-color-text, #1e1e1e);
+}
+
+.credit-footer a:focus-visible,
+.about-links a:focus-visible {
+  outline: 2px solid var(--figma-color-border-selected, #0d99ff);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.credit-sep {
+  color: var(--figma-color-text-tertiary, #a0a0a0);
+  user-select: none;
+}
+
+.about-section {
+  gap: 6px;
+  font-size: 11px;
+}
+
+.about-title strong {
+  font-weight: 600;
+  color: var(--figma-color-text, #1e1e1e);
+}
+
+.about-author {
+  color: var(--figma-color-text, #1e1e1e);
+}
+
+.about-copyright {
+  font-size: 11px;
+  color: var(--figma-color-text-secondary, #757575);
+}
+
+.about-links {
+  gap: 6px;
+  font-size: 11px;
+}
+
+.about-links a {
+  color: var(--figma-color-text-brand, #0d99ff);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.about-links a:hover {
+  color: var(--figma-color-text, #1e1e1e);
+}
