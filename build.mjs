@@ -3,7 +3,7 @@
 //   src/code.ts      -> code.js  (Figma main thread, sandboxed JS)
 //   src/ui/main.tsx  -> ui.html  (single file, JS + CSS inlined)
 import * as esbuild from "esbuild";
-import { writeFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 
 const watch = process.argv.includes("--watch");
 
@@ -26,11 +26,14 @@ const inlineHtmlPlugin = {
       if (result.errors.length || !result.outputFiles) return;
       const js = result.outputFiles.find((f) => f.path.endsWith(".js"))?.text ?? "";
       const css = result.outputFiles.find((f) => f.path.endsWith(".css"))?.text ?? "";
+      const faviconSvg = await readFile("assets/favicon.svg", "utf8");
+      const faviconBase64 = Buffer.from(faviconSvg).toString("base64");
       const html = `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
 <title>Fold Ruler &amp; Grids</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,${faviconBase64}" />
 <style>${css.replace(/<\/style/gi, "<\\/style")}</style>
 </head>
 <body>
